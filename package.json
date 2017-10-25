@@ -11,7 +11,7 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "firebase": "4.4.0",
+    "firebase": "^4.4.0",
     "bs-platform": "^1.9.2"
   }
 }
