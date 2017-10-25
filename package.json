@@ -1,0 +1,17 @@
+{
+  "name": "bs-firebase",
+  "version": "0.1.0",
+  "scripts": {
+    "clean": "bsb -clean-world",
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "firebase": "4.4.0",
+    "bs-platform": "^1.9.2"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "bs-firebase",
+  "version": "0.1.0",
+  "sources": [
+    "src"
+  ],
+  "bs-dependencies" : [
+  ],
+  "package-specs": [
+    {
+      "module": "commonjs",
+      "in-source": true
+    }
+  ],
+  "generate-merlin": true,
+  "bsc-flags": ["-bs-super-errors"]
+}
