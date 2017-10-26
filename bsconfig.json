@@ -12,6 +12,7 @@
       "in-source": true
     }
   ],
+  "namespace": true,
   "generate-merlin": true,
   "bsc-flags": ["-bs-super-errors"],
   "suffix": ".bs.js"
