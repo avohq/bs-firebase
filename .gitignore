@@ -24,3 +24,4 @@ lib
 .vscode
 .merlin
 *.js
+node_modules
