@@ -5,6 +5,7 @@
     "src"
   ],
   "bs-dependencies" : [
+    "bs-webapi",
   ],
   "package-specs": [
     {
