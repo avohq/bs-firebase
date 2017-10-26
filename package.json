@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "firebase": "^4.4.0"
-  }
   },
   "repository": "git@github.com:viskahq/bs-firebase.git",
   "author": ""
