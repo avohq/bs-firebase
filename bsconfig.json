@@ -13,5 +13,6 @@
     }
   ],
   "generate-merlin": true,
-  "bsc-flags": ["-bs-super-errors"]
+  "bsc-flags": ["-bs-super-errors"],
+  "suffix": ".bs.js"
 }
