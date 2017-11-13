@@ -1,6 +1,7 @@
 {
   "name": "bs-firebase",
   "version": "0.1.0",
+  "refmt": 3,
   "sources": [
     "src"
   ],
