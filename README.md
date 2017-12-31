@@ -1,3 +1,16 @@
+# BuckleScript bindings for firebase
+Add type for in reason to google's firebase api documented
+[here](https://firebase.google.com/docs/reference/js/).
+## Install
+yarn add (git url)
+add to your bsconfig.json
+```json
+  "bs-dependencies": [
+    ...
+	"bs-firebase"
+  ],
+```
+
 ## Example
 
 ```ocaml
@@ -10,17 +23,17 @@ let options =
 	"messagingSenderId": "..."
    };
 
-let app = ReasonFirebase.initializeApp(options);
+let app = BsFirebase.ReasonFirebase.initializeApp(options);
 
-let db = ReasonFirebase.App.database(app);
+let db = BsFirebase.ReasonFirebase.App.database(app);
 
-ReasonFirebase.Database.Reference.once(
-      ReasonFirebase.Database.ref(db, ~path="ticket", ()),
+BsFirebase.ReasonFirebase.Database.Reference.once(
+      BsFirebase.ReasonFirebase.Database.ref(db, ~path="ticket", ()),
       ~eventType="value",
       ()
     )
     |> Js.Promise.then_(
-      (teamDomain) => ReasonFirebase.Database.DataSnapshot.val_(teamDomain)
+      (teamDomain) => BsFirebase.ReasonFirebase.Database.DataSnapshot.val_(teamDomain)
         |> (ticket) => parseTicket(ticket)
         |> (ticketJson) => Js.log(ticketJson) //here you got a record of ticket type
         |> Js.Promise.resolve
