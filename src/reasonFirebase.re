@@ -141,6 +141,12 @@ module Auth = {
   };
   [@bs.get] external currentUser : t => Js.null(User.t) = "currentUser";
   [@bs.send]
+    external createUserWithEmailAndPassword : (
+    t,
+    ~email:string,
+    ~password:string
+  ) => Js.Promise.t(User.t) = "createUserWithEmailAndPassword";
+  [@bs.send]
   external onAuthStateChanged :
     (
       t,
